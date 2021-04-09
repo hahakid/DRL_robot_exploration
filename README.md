@@ -20,6 +20,10 @@ This repository contains code for robot exploration with Deep Reinforcement Lear
   pip3 install tensorboardX
   ```
 - [TensorFlow](https://www.tensorflow.org/install) (this code is writen under TF1.x but it is modified to be compatible with TF2)
+
+
+The pybind11 should be install without anaconda virtual environment!!!!
+
 - [pybind11](https://github.com/pybind/pybind11) (pybind11 — Seamless operability between C++11 and Python)
   ```
   git clone https://github.com/pybind/pybind11.git
