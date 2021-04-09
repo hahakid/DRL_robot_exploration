@@ -50,7 +50,7 @@ Please ref below image for local tf version:
 Newest version can be found [tf_installation_problems](https://www.tensorflow.org/install/source#common_installation_problems)
 
 ```
-changing the path to the conda Python in CMakeList.txt
+changing the path to the conda Python in CMakeList.txt (make sure the second line is changed at least).
 set(PYTHON_EXECUTABLE /home/local_machine_name/anaconda3/envs/your_virtual_env_name/bin/python3)
 
 mkdir build && cd build
