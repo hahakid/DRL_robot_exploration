@@ -37,7 +37,12 @@ conda install cudnn=7.6
 pip install -r requirements.txt
 
 ```
+Please ref below image for local tf version:
 
+<p align='center'>
+    <img src="/doc/tf.png" alt="drawing" width="1000"/>
+</p>
+Newest version can be found [tf_installation_problems](https://www.tensorflow.org/install/source#common_installation_problems)
 
 ```
 
