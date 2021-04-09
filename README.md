@@ -11,7 +11,7 @@ This repository contains code for robot exploration with Deep Reinforcement Lear
 
 ## Dependency
 
-The pybind11 should be install without anaconda virtual environment!!!!
+The pybind11 should be install without anaconda virtual environment.
 
 - [pybind11](https://github.com/pybind/pybind11) (pybind11 — Seamless operability between C++11 and Python)
   ```
@@ -67,15 +67,17 @@ make
 
 
 
-## How to Run?
+## How to Run? (I use pycharm instead.)
 - For the CNN policy:
     ```
     cd DRL_robot_exploration/scripts
+    make sure TRAIN = Ture (Line 13)
     python3 tf_policy_cnn.py
     ```
 - For the RNN policy:
     ```
     cd DRL_robot_exploration/scripts
+    make sure TRAIN = Ture (Line 13)
     python3 tf_policy_rnn.py
     ```
 - To select the running mode, at the beginning of the tf_policy code:
