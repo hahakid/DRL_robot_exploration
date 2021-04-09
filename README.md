@@ -33,7 +33,6 @@ cd DRL_robot_exploration
 #for tf-gpu=2.1.0 
 conda install cudatoolkit=10.1
 conda install cudnn=7.6
-
 pip install -r requirements.txt
 
 ```
@@ -45,6 +44,8 @@ Please ref below image for local tf version:
 Newest version can be found [tf_installation_problems](https://www.tensorflow.org/install/source#common_installation_problems)
 
 ```
+changing the path to the Python in CMakeList.txt
+set(PYTHON_EXECUTABLE /home/local_machine_name/anaconda3/envs/your_virtual_env_name/bin/python3)
 
 mkdir build && cd build
 cmake ..
@@ -93,7 +94,7 @@ make
 
 ## Cite
 
-Please cite [our paper](https://www.researchgate.net/profile/Fanfei_Chen/publication/330200308_Self-Learning_Exploration_and_Mapping_for_Mobile_Robots_via_Deep_Reinforcement_Learning/links/5d6e7ad4a6fdccf93d381d2e/Self-Learning-Exploration-and-Mapping-for-Mobile-Robots-via-Deep-Reinforcement-Learning.pdf) if you use any of this code: 
+Please cite [original paper](https://www.researchgate.net/profile/Fanfei_Chen/publication/330200308_Self-Learning_Exploration_and_Mapping_for_Mobile_Robots_via_Deep_Reinforcement_Learning/links/5d6e7ad4a6fdccf93d381d2e/Self-Learning-Exploration-and-Mapping-for-Mobile-Robots-via-Deep-Reinforcement-Learning.pdf) if you use any of this code: 
 ```
 @inproceedings{ExplorDRL2019,
   title={Self-Learning Exploration and Mapping for Mobile Robots via Deep Reinforcement Learning},
