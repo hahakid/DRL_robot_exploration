@@ -10,17 +10,6 @@ This repository contains code for robot exploration with Deep Reinforcement Lear
 </p>
 
 ## Dependency
-- Python 3
-- [scikit-image](https://scikit-image.org/)
-  ```
-  pip3 install scikit-image
-  ```
-- [tensorboardX](https://github.com/lanpa/tensorboardX)
-  ```
-  pip3 install tensorboardX
-  ```
-- [TensorFlow](https://www.tensorflow.org/install) (this code is writen under TF1.x but it is modified to be compatible with TF2)
-
 
 The pybind11 should be install without anaconda virtual environment!!!!
 
@@ -34,6 +23,31 @@ The pybind11 should be install without anaconda virtual environment!!!!
   ```
 ## Compile
 
+```
+git clone https://github.com/RobustFieldAutonomyLab/DRL_robot_exploration.git
+```
+
+First prepare anaconda envs:
+```
+cd DRL_robot_exploration
+#for tf-gpu=2.1.0 
+conda install cudatoolkit=10.1
+conda install cudnn=7.6
+
+pip install -r requirements.txt
+
+```
+
+
+```
+
+mkdir build && cd build
+cmake ..
+make
+```
+
+
+
 You can use the following commands to download and compile the package.
 ```
 git clone https://github.com/RobustFieldAutonomyLab/DRL_robot_exploration.git
@@ -42,6 +56,10 @@ mkdir build && cd build
 cmake ..
 make
 ```
+
+
+
+
 
 ## How to Run?
 - For the CNN policy:
