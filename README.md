@@ -25,7 +25,13 @@ The pybind11 should be install without anaconda virtual environment.
 
 ```
 git clone https://github.com/RobustFieldAutonomyLab/DRL_robot_exploration.git
+
+I merge the python dependencies in requirements.txt (in this repo), so you should download the requirments.txt or use the cmd below.
+
+git clone https://github.com/hahakid/DRL_robot_exploration.git
 ```
+
+
 
 First prepare anaconda envs:
 ```
@@ -44,7 +50,7 @@ Please ref below image for local tf version:
 Newest version can be found [tf_installation_problems](https://www.tensorflow.org/install/source#common_installation_problems)
 
 ```
-changing the path to the Python in CMakeList.txt
+changing the path to the conda Python in CMakeList.txt
 set(PYTHON_EXECUTABLE /home/local_machine_name/anaconda3/envs/your_virtual_env_name/bin/python3)
 
 mkdir build && cd build
@@ -72,13 +78,13 @@ make
     ```
     cd DRL_robot_exploration/scripts
     make sure TRAIN = Ture (Line 13)
-    python3 tf_policy_cnn.py
+    python tf_policy_cnn.py
     ```
 - For the RNN policy:
     ```
     cd DRL_robot_exploration/scripts
     make sure TRAIN = Ture (Line 13)
-    python3 tf_policy_rnn.py
+    python tf_policy_rnn.py
     ```
 - To select the running mode, at the beginning of the tf_policy code:
     ```
