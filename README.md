@@ -59,31 +59,17 @@ make
 ```
 
 
-
-You can use the following commands to download and compile the package.
-```
-git clone https://github.com/RobustFieldAutonomyLab/DRL_robot_exploration.git
-cd DRL_robot_exploration
-mkdir build && cd build
-cmake ..
-make
-```
-
-
-
-
-
 ## How to Run? (I use pycharm instead.)
 - For the CNN policy:
     ```
     cd DRL_robot_exploration/scripts
-    make sure TRAIN = Ture (Line 13)
+    #make sure TRAIN = Ture (Line 13)
     python tf_policy_cnn.py
     ```
 - For the RNN policy:
     ```
     cd DRL_robot_exploration/scripts
-    make sure TRAIN = Ture (Line 13)
+    #make sure TRAIN = Ture (Line 13)
     python tf_policy_rnn.py
     ```
 - To select the running mode, at the beginning of the tf_policy code:
